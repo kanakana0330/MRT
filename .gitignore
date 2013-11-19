@@ -1,0 +1,10 @@
+.DS_Store
+project.xcworkspace
+xcuserdata
+*.pbxuser
+*.smbdelete*
+*._*
+Thumbs.db
+.localized
+.sass-cache
+node_modules
