@@ -1,0 +1,5 @@
+.#{$class_table-bordered} {
+  th,td {
+    border: solid 1px #{$tableBorderColor};
+  }
+}

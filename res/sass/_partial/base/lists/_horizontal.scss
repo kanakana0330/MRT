@@ -1,0 +1,27 @@
+.#{$class_list-horizontal} {
+  margin-top: -4px;
+  > li,
+  > dt,
+  > dd {
+    margin-top: 4px;
+    @include horizontal();
+
+  }
+  &.#{$class_right}{
+    > li,
+    > dt,
+    > dd {
+      padding-right:0;
+      padding-left:5px;
+    }
+  }
+  dt {
+    @include col(4);
+    @include ellipsis();
+    margin-left: 0;
+  }
+  dd {
+    @include col(8);
+    min-height: #{($textLargeSize * $textLineHeight)}px
+  }
+}

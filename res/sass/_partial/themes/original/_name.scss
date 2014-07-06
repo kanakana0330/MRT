@@ -1,0 +1,197 @@
+/*****
+* ClassName
+*/
+
+/**
+* Scaffolding
+*/
+
+/* Layout */
+$class_global-container: 'glContr';
+$class_container: 'contr';
+$class_contents-wrap: 'contWrap';
+$class_global-container-not-navFoot: 'notNavFoot';
+$class_custom_background: customBg;
+
+/* Glid */
+$class_row: 'row';
+$class_col: 'col';
+$class_offset: 'offset';
+$class_spacing: 'space';
+
+/* unstyled */
+$class_unstyled: 'unstyl';
+
+/* landscape */
+$class_landscape: 'ldscp';
+
+/* Width */
+$class_width: 'w';
+$class_width-full: 'wFull';
+$class_width-half: 'wHalf';
+
+/* Display */
+$class_block:'dB';
+$class_inline:'dI';
+$class_inline-block:'dIb';
+
+/**
+* Base
+*/
+/* typography */
+$class_heading-lv1: 'h1';
+$class_heading-lv2: 'h2';
+$class_heading-lv3: 'h3';
+$class_heading-lv4: 'h4';
+$class_heading-lv5: 'h5';
+$class_heading-lv6: 'h6';
+
+$class_sentence: 'sen';
+$class_lead: 'lead';
+
+$class_huge: 'fsH';
+$class_jumbo: 'fsJ';
+$class_large: 'fsL';
+$class_medium: 'fsM';
+$class_small: 'fsS';
+$class_tiny: 'fsT';
+
+$class_normal: 'fwN';
+$class_bold: 'fwB';
+$class_italic: 'fwI';
+
+$class_left: 'taL';
+$class_center: 'taC';
+$class_right: 'taR';
+
+$class_top: 'vaT';
+$class_middle: 'vaM';
+$class_bottom: 'vaB';
+$class_baseline: 'vaBl';
+
+$class_text-link: lnk;
+
+$class_blockquote: 'bq';
+$class_address: 'adr';
+$class_code: 'code';
+
+$class_ellipsis: 'ellp';
+
+$class_attention: 'att';
+
+$class_information: 'info';
+
+$class_max-air-temperature: 'maxAirTemp';
+$class_min-air-temperature: 'minAirTemp';
+$class_empty-message: 'emptyMsg';
+
+$class_line-height-L: 'lineL';
+$class_line-height-M: 'lineM';
+
+/* Lists */
+$class_descriptions: 'dl';
+$class_title: 'ttl';
+$class_list-horizontal: 'hrz';
+$class_list-separate-horizontal: 'sepHrz';
+$class_list-link-horizontal: 'lnkHrz';
+$class_list-social-horizontal: 'socialHrz';
+$class_list-social-horizontal-facebook-like:'fbLike';
+$class_list-social-horizontal-facebook-share:'fbShare';
+$class_list-social-horizontal-twitter:'tw';
+$class_list-social-horizontal-googleplus:'plus';
+
+/* Tables */
+$class_table: 'tbl';
+$class_table-striped: 'stripe';
+$class_table-vertical: 'vtcl';
+$class_table-bordered: 'bdr';
+$class_table-hovered: 'hvr';
+
+/* Forms */
+$class_form: 'frm';
+$class_form-field: 'fld';
+$class_form-label: 'lbl';
+$class_form-horizontal: 'hrz';
+$class_form-vertical: 'vtcl';
+$class_form-hovered: 'hvr';
+
+$class_input: 'inpt';
+$class_find-input: 'findInpt';
+$class_input-with-icon: 'withIcn';
+$class_input-focus: 'focus';
+
+$class_textarea: 'txtarea';
+$class_textarea-twolines: 'twoline';
+$class_textarea-fourlines: 'fourline';
+
+/* Images */
+$class_img-round: 'rnd';
+$class_img-circle: 'circ';
+$class_img-polaroid: 'pola';
+
+/* Status */
+$class_primary:        'prim';
+$class_primary-orange: 'primOrange';
+$class_primary-green:  'primGreen';
+$class_primary-yellow: 'primYellow';
+$class_minor:    'minor';
+$class_minor-large:    'minorL';
+$class_minor-small:    'minorS';
+$class_warning:  'warn';
+$class_success:  'suc';
+$class_pending:  'pend';
+$class_error:    'err';
+$class_disabled: 'disabled';
+$class_required: 'require';
+$class_dark:     'dark';
+
+$class_active:   'act';
+$class_loading:  'load';
+
+/* Skin */
+$class_skin-blue:   'skBlue';
+$class_skin-pink:   'skPink';
+$class_skin-orange: 'skOrange';
+$class_skin-yellow: 'skYellow';
+$class_skin-green:  'skGreen';
+$class_skin-gray:   'skGray';
+$class_skin-dark:   'skDark';
+$class_skin-white:   'skWhite';
+$class_skin-light-dark:   'skLightDark';
+$class_skin-gradation-gray:   'skGradGray';
+
+/* Visible */
+$class_show:    'show';
+$class_hide:    'hide';
+$class_fadein:  'fadein';
+$class_fadeout: 'fadeout';
+$class_zoomin:  'zoomin';
+$class_zoomout: 'zoomout';
+
+/* Position */
+$class_static:   'static';
+$class_relative: 'relative';
+$class_absolute: 'absolute';
+$class_fixed:    'fixed';
+
+/* DOM Status */
+$class_first-child: 'first';
+$class_last-child:  'last';
+$class_only-child:  'only';
+
+
+/**
+* Components
+*/
+/* Cassette */
+// $class_unit: 'unit';
+// $class_headline: 'hl';
+// $class_caption: 'cptn';
+// $class_cassette: 'cst';
+// $class_inner: 'in';
+// $class_inner-fat: 'inFat';
+// $class_headline_supplement: 'hlSupp';
+// $class_unit-news: 'unitNews';
+
+$class_tap: 'tap';
+$class_tapped: 'tapped';

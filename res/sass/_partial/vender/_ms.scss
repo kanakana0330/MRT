@@ -1,0 +1,11 @@
+////////////////////////////////////////////////////////
+// _ms.scss (ベンダープレフィックスms対応)
+// ベンダープレフィックス -ms- および W3C標準
+////////////////////////////////////////////////////////
+
+$experimental-support-for-mozilla: false;
+$experimental-support-for-webkit: false;
+$experimental-support-for-microsoft: true;
+$experimental-support-for-opera: false;
+$experimental-support-for-khtml: false;
+$official: false;

@@ -1,0 +1,5 @@
+.#{$class_minor-large} {
+  color: #{$status_minorColor};
+  font-size: #{$textMediumSize}px;
+  line-height: #{$textMediumSize * $textLineHeight}px;
+}

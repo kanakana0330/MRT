@@ -1,0 +1,10 @@
+////////////////////////////////////////////////////////
+// _moz.scss (ベンダープレフィックスmoz対応)
+// ベンダープレフィックス -moz- および W3C標準
+////////////////////////////////////////////////////////
+
+$experimental-support-for-mozilla: true;
+$experimental-support-for-webkit: false;
+$experimental-support-for-microsoft: false;
+$experimental-support-for-opera: false;
+$experimental-support-for-khtml: false;

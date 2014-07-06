@@ -1,0 +1,11 @@
+.#{$class_form-horizontal} {
+  .#{$class_form-field} {
+    display: block;
+    margin-bottom: #{$spacingOuterBottom}#{$spacingUnit};
+  }
+  .#{$class_form-label} {
+    @include medium;
+    @include right;
+    margin-top: 7px;
+  }
+}

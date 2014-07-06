@@ -1,0 +1,41 @@
+@mixin button(
+  $__color:             $button_color,
+  $__bgColor:           $button_backgroundColor,
+  $__bgGradientTop:     $button_backgroundGradientTop,
+  $__bgGradientBottom:  $button_backgroundGradientBottom,
+  $__borderColor:       $button_borderColor,
+  $__borderColorTop:    $button_borderColorTop,
+  $__borderColorBottom: $button_borderColorBottom,
+  $__textShadow:        $button_textShadow,
+  $__textOffsetY:       $button_textOffsetY
+) {
+  @if $__color != '' {
+    color: #{$__color};
+  }
+  @if $__bgColor != '' {
+    background-color: #{$__bgColor};
+  }
+
+  @include box-sizing(border-box);
+  @if $__bgGradientTop != '' {
+    @include background-image(linear-gradient($__bgGradientTop, $__bgGradientBottom));
+  } @else{
+    background-image:none;
+  }
+  @if $__borderColor == '' {
+    border:0 none;
+  } @else {
+    border: 1px solid #{$__borderColor};
+    @if $__borderColorTop != '' {
+      border-top-color: #{$__borderColorTop};
+    }
+    @if $__borderColorBottom != '' {
+      border-bottom-color: #{$__borderColorBottom};
+    }
+  }
+  @if $__textShadow != '' {
+    @include text-shadow(0 #{$__textOffsetY}px 0 #{$__textShadow});
+  } @else {
+    @include text-shadow(0 0 0 transparent);
+  }
+}

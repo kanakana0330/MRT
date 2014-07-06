@@ -1,0 +1,5 @@
+img {
+  &.#{$class_img-circle} {
+    @include border-radius(50%);
+  }
+}
