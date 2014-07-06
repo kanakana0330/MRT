@@ -1,0 +1,63 @@
+/* Bottom (Default) */
+.#{$class_spacing} {
+  margin-bottom: #{$spacingInner / 2}#{$spacingUnit}!important;
+}
+@for $i from 0 through $spacingLength {
+  .#{$class_spacing}#{($i * $spacing)} {
+    margin-bottom: #{($i * $spacing)}#{$spacingUnit}!important;
+  }
+}
+.#{$class_spacing}#{$spacingInner} {
+  margin-bottom: #{$spacingInner}#{$spacingUnit}!important;
+}
+.#{$class_spacing}#{$spacingOuter} {
+  margin-bottom: #{$spacingOuter}#{$spacingUnit}!important;
+}
+
+/* Left */
+.#{$class_spacing}L {
+  margin-left: #{$spacingInner /2}#{$spacingUnit}!important;
+}
+@for $i from 0 through $spacingLength {
+  .#{$class_spacing}L#{($i * $spacing)} {
+    margin-left: #{($i * $spacing)}#{$spacingUnit}!important;
+  }
+}
+.#{$class_spacing}L#{$spacingInner} {
+  margin-left: #{$spacingInner}#{$spacingUnit}!important;
+}
+.#{$class_spacing}L#{$spacingOuter} {
+  margin-left: #{$spacingOuter}#{$spacingUnit}!important;
+}
+
+/* Right */
+.#{$class_spacing}R {
+  margin-right: #{$spacingInner / 2}#{$spacingUnit}!important;
+}
+@for $i from 0 through $spacingLength {
+  .#{$class_spacing}R#{($i * $spacing)} {
+    margin-right: #{($i * $spacing)}#{$spacingUnit}!important;
+  }
+}
+.#{$class_spacing}R#{$spacingInner} {
+  margin-right: #{$spacingInner}#{$spacingUnit}!important;
+}
+.#{$class_spacing}R#{$spacingOuter} {
+  margin-right: #{$spacingOuter}#{$spacingUnit}!important;
+}
+
+/* Top */
+.#{$class_spacing}T {
+  margin-top: #{$spacingInner / 2}#{$spacingUnit}!important;
+}
+@for $i from 0 through $spacingLength {
+  .#{$class_spacing}T#{($i * $spacing)} {
+    margin-top: #{($i * $spacing)}#{$spacingUnit}!important;
+  }
+}
+.#{$class_spacing}T#{$spacingInner} {
+  margin-top: #{$spacingInner}#{$spacingUnit}!important;
+}
+.#{$class_spacing}T#{$spacingOuter} {
+  margin-top: #{$spacingOuter}#{$spacingUnit}!important;
+}

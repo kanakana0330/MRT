@@ -1,0 +1,45 @@
+/* Sprite */
+@mixin sprite($__w, $__h, $__x:0, $__y:0){
+  width: #{$__w}px;
+  height: #{$__h}px;
+  background-position: #{$__x}px #{$__y}px;
+}
+@mixin spriteGroup($__size, $__row, $__length){
+  @for $__i from 1 through $__length {
+    .#{$class_sprite}#{$__size}-#{$__row}_#{$__i}{
+      @include sprite(#{$__size}, #{$__size}, -(($__i - 1) * $__size), -(($__row - 1) * $__size));
+    }
+  }
+}
+
+
+//$_lastName : スプライト名
+//$_length : 左からの位置を0から数えてください
+//$_tapped : tappedで色が変わる場合はtrue,変わらない場合はfalse
+//$_cur :  curで色が変わる場合はtrue,変わらない場合はfalse
+//$_disabled : disabledで色が変わる場合はtrue,変わらない場合はfalse
+
+@mixin ia($_lastName,$_length,$_tapped,$_cur,$_disabled){
+  .#{$_name}_#{$_lastName} {
+    $__left: -#{$_size * $_length}px;
+    background-position: #{$__left} 0;
+    @if $_tapped == true {
+      .#{$class_sprite-tapped} &,
+      &.#{$class_sprite-tapped}{
+        background-position: #{$__left} -#{$_size}px;
+      }
+    }
+    @if $_cur == true {
+      .#{$class_sprite-cur} &,
+      &.#{$class_sprite-cur}{
+        background-position: #{$__left} -#{$_size * 2}px;
+      }
+    }
+    @if $_disabled == true {
+      .#{$class_sprite-disabled} &,
+      &.#{$class_sprite-disabled}{
+        background-position: #{$__left} -#{$_size * 3}px;
+      }
+    }
+  }
+}
