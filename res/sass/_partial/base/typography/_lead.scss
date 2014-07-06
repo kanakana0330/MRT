@@ -1,9 +1,0 @@
-.#{$class_lead} {
-  @include medium;
-  @include bold;
-  &.#{$class_landscape}{
-    @media (min-width: 480px){
-      text-align: center;
-    }
-  }
-}

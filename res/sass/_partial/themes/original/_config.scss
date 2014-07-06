@@ -11,7 +11,7 @@ $textSizeAdjust: 'none';
 $tapHighlight: rgba(0,0,0,0);
 
 /* Font */
-$fontFamily: 'Helvetica,Arial,Sans-Serif,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic"';
+$fontFamily: Meiryo, Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", sans-serif;
 
 /* Body */
 $bodyBackgroundColor: '#f1f2f3';
@@ -26,15 +26,13 @@ $responsiveMinWidth: 580;
 /* container */
 $containerMaxWidth: 960;
 $containerMinWidth: 320;
-$containerPosition: 'center';
 
 /*
 * Spacing
 */
 /* spacing base */
 $spacing: 5;
-$spacingUnit: 'px';
-$spacingLength: 4;
+$spacingLength: 5;
 
 /* spacing outer */
 $spacingOuter:       8;
