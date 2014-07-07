@@ -1,0 +1,11 @@
+.glNav{
+  position: fixed;
+  top:0;
+  left:0;
+  width: #{$pc_navigation_width}px;
+  background:#fdd;
+  .logo{
+    position:relative;
+    height: auto;
+  }
+}

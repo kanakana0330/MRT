@@ -1,0 +1,12 @@
+.glNav{
+  background:#ffd;
+  .logo{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height: #{$sp_logo_height}px;
+    background-color:#ffd;
+  }
+}
