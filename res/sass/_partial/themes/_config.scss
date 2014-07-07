@@ -1,0 +1,62 @@
+/*****
+* Config
+*/
+
+/**
+* Scaffolding
+*/
+/* All */
+$boxSizing:      'border-box';
+$textSizeAdjust: 'none';
+$tapHighlight: rgba(0,0,0,0);
+
+/* Font */
+$fontFamily: Arial, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+/* Body */
+$bodyBackgroundColor: '#fff';
+
+/* Responsive */
+$responsive: true; //true, false
+$responsiveMinWidth: 580;
+
+/*
+* Layout
+*/
+/* container */
+$sp_container_maxWidth: 960;
+$sp_container_minWidth: 320;
+$sp_logo_height: 50;
+
+$pc_container_maxWidth: 1024;
+$pc_navigation_width:150;
+$pc_contents_spacing:20;
+
+/*
+* Spacing
+*/
+/* spacing base */
+$spacing: 5;
+$spacingLength: 5;
+
+
+/* font-size */
+$textDefaultSize: 14;
+$textHugeSize:  ($textDefaultSize + 6);
+$textJumboSize: ($textDefaultSize + 4);
+$textLargeSize: ($textDefaultSize + 2);
+$textMediumSize: $textDefaultSize;
+$textSmallSize: ($textDefaultSize - 2);
+$textTinySize:  ($textDefaultSize - 4);
+
+/* line-height */
+$textMinLineHeight: 1;
+$textLineHeight: 1.2;
+$textLineHeightM: 1.4;
+$textLineHeightL: 1.6;
+
+/*
+* status
+*/
+/* color */
+$status_normalColor                  :'#345';

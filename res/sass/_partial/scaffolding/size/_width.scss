@@ -1,21 +1,16 @@
 @mixin _width($_width) {
-  .#{$class_width}#{$_width}{
+  .w#{$_width}{
     width: #{$_width}px !important;
   }
 }
 
-.#{$class_width-full}{
+.wFull{
   width: 100% !important;
 }
-.#{$class_width-half}{
+.wHalf{
   width: 50% !important;
 }
 
 
 //不要なパーツは増やさないように！！
 @include _width(20);
-@include _width(25);
-@include _width(35);
-@include _width(45);
-@include _width(55);
-@include _width(65);

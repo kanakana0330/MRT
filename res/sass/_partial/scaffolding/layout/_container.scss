@@ -1,8 +1,6 @@
-.#{$class_container} {
-  max-width: #{$containerMaxWidth}px;
-  min-width: #{$containerMinWidth}px;
-  @if($containerPosition == 'center'){
-    margin-left: auto;
-    margin-right: auto;
-  }
+.container {
+  max-width: #{$sp_container_maxWidth}px;
+  min-width: #{$sp_container_minWidth}px;
+  margin-left: auto;
+  margin-right: auto;
 }

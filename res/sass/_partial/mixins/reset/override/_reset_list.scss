@@ -1,17 +1,10 @@
 @mixin resetList {
   ol, ul {
-    padding-left: 1.5em;
+    margin: 0;
+    padding:0;
     li {
-      line-height: #{$textLineHeight};
-    }
-    &.#{$class_unstyled} {
-      @include reset-list-style;
-      li {
-        line-height: 1;
-      }
-    }
-    li {
-      line-height: #{$textLineHeight};
+      display: block;
+      line-height: 1;
     }
   }
 }
