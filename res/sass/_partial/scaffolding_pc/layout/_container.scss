@@ -1,6 +1,6 @@
 .container {
   position:relative;
   max-width: #{$pc_container_maxWidth}px;
-  padding-left: #{$pc_navigation_width + $pc_contents_spacing}px;
-  padding-right: #{$pc_contents_spacing}px;
+  padding-left: #{$pc_navigation_width + $pc_contents_side_spacing}px;
+  padding-right: #{$pc_contents_side_spacing}px;
 }

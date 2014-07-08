@@ -1,0 +1,25 @@
+.column{
+  @include pie-clearfix;
+  .item{
+    float:left;
+    padding-left: #{$pc_column_spacing}px;
+    &:first-child{
+      margin-left: #{$pc_column_spacing * -1}px;
+    }
+  }
+
+  //2カラム
+  &.col2{
+    .item{
+      width: #{ ($pc_contents_width + $pc_column_spacing) / 2}px;
+      background-color: #fff;
+    }
+  }
+  //3カラム
+  &.col3{
+    .item{
+      width: #{ ($pc_contents_width + $pc_column_spacing) / 3}px;
+      background-color: #fff;
+    }
+  }
+}

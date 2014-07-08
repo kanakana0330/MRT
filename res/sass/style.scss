@@ -1,7 +1,14 @@
-/* common params */
 @import "_partial/mixins/all";
 @import "_partial/themes/all";
 @import "_partial/vender/all";
 
 @import "_partial/scaffolding/all";
 @import "_partial/components/all";
+
+/*
+  Orverride for PC
+*/
+@media screen and (min-width: #{$sp_container_maxWidth}px) {
+  @import "_partial/scaffolding_pc/all";
+  @import "_partial/components_pc/all";
+}
