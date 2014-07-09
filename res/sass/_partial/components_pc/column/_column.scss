@@ -2,24 +2,48 @@
   @include pie-clearfix;
   .item{
     float:left;
-    padding-left: #{$pc_column_spacing}px;
-    &:first-child{
-      margin-left: #{$pc_column_spacing * -1}px;
-    }
   }
 
   //2カラム
   &.col2{
     .item{
-      width: #{ ($pc_contents_width + $pc_column_spacing) / 2}px;
-      background-color: #fff;
+      width: 50%;
+      .itemIn{
+        background-color: #fff;
+      }
+
+      &:first-child{
+        .itemIn{
+          margin-right: #{$pc_column_spacing / 2}px;
+        }
+      }
+      &:last-child{
+        .itemIn{
+          margin-left: #{$pc_column_spacing / 2}px;
+        }
+      }
     }
   }
   //3カラム
   &.col3{
     .item{
-      width: #{ ($pc_contents_width + $pc_column_spacing) / 3}px;
-      background-color: #fff;
+      width: 33.3%;
+      .itemIn{
+        background-color: #fff;
+        margin-left: #{$pc_column_spacing / 2}px;
+        margin-right: #{$pc_column_spacing / 2}px;
+      }
+
+      &:first-child{
+        .itemIn{
+          margin-left: 0;
+        }
+      }
+      &:last-child{
+        .itemIn{
+          margin-right: 0;
+        }
+      }
     }
   }
 }

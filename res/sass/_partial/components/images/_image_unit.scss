@@ -1,0 +1,11 @@
+.imgUnit{
+  margin-bottom:#{$sp_image_unit_spacingBottom}px;
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:#{$sp_image_unit_spacing}px;
+  }
+  .txt{
+  }
+}

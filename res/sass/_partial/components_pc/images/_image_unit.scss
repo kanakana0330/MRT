@@ -1,0 +1,12 @@
+.imgUnit{
+  margin-bottom:#{$pc_image_unit_spacingBottom}px;
+  @include pie-clearfix;
+  img{
+    float:left;
+    margin-right:#{$pc_image_unit_spacing}px;
+    margin-bottom:0;
+  }
+  .txt{
+    overflow: hidden;
+  }
+}
