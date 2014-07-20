@@ -13,3 +13,12 @@
   @import "_partial/scaffolding_pc/all";
   @import "_partial/components_pc/all";
 }
+
+/*
+  Orverride for print
+*/
+@media print {
+  .glNav {
+    display: none;
+  }
+}
