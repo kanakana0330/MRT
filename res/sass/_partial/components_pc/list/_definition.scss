@@ -14,3 +14,24 @@
     margin-bottom:15px;
   }
 }
+
+.companyDataList{
+  @include pie-clearfix;
+  dt{
+    float: left;
+    display: block;
+    height: 50px;
+    width: 90px;
+    font-size: $textMediumSize;
+    line-height: 50px;
+    font-weight:bold;
+  }
+  dd{
+    display: block;
+    margin-left: 90px;
+    border-bottom:1px solid #999;
+    font-size: $textMediumSize;
+    line-height: 50px;
+    height: 50px;
+  }
+}
