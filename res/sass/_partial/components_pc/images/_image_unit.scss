@@ -7,6 +7,33 @@
     margin-bottom:0;
   }
   .txt{
-    overflow: hidden;
+    &.rect{
+      overflow: hidden;
+    }
+  }
+
+  &.imgR{
+    img{
+      float:right;
+      margin-right:0;
+      margin-left:#{$pc_image_unit_spacing}px;
+    }
+  }
+}
+
+.imgUnitFixed{
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+  .item{
+    display: table-cell;
+    vertical-align: top;
+  }
+  .itemImg{
+    display: table-cell;
+    width:220px;
+    vertical-align: top;
+    padding-left:#{$pc_image_unit_spacing}px;
   }
 }

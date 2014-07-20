@@ -1,5 +1,5 @@
 .glNav{
-  background:#ffd;
+  background-color:#e3e3e5;
   .logo{
     position:absolute;
     top:0;
@@ -7,6 +7,91 @@
     right:0;
     width:100%;
     height: #{$sp_logo_height}px;
-    background-color:#ffd;
+    background-color:#fff;
+    background-image:url(../images/common/sp_logo.png);
+    background-repeat:no-repeat;
+    background-position:center top;
+    @include background-size(auto #{$sp_logo_height}px);
+    a{
+      display: block;
+      color: transparent;
+      height: #{$sp_logo_height}px;
+    }
+  }
+
+  .mainNav{
+    > ul{
+      > li{
+        > a{
+          display: block;
+          font-size:#{$textLargeSize}px;
+        }
+      } 
+    }
+  }
+  .utility{
+    a{
+      &.mail{
+        &:before{
+          content:'';
+          display: inline-block;
+          width: 18px;
+          height:14px;
+              margin-right:5px;
+          background-image:url(../images/common/sp_icon_mail.png);
+          @include background-size(18px auto);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: #{$sp_container_maxWidth}px) {
+  .mainNav{
+    > ul{
+      > li{
+        border-bottom:1px solid #bbbbbd;
+        &:first-child{
+          border-top:1px solid #bbbbbd;
+        }
+        > a{
+          position:relative;
+          padding: 12px 20px;
+          line-height: 16px;
+          &:after{
+            position:absolute;
+            top:12px;
+            right:20px;
+            content:'';
+            display: block;
+            width: 9px;
+            height:16px;
+            vertical-align: middle;
+            background-repeat:no-repeat;
+            background-position:0 0;
+            background-image:url(../images/common/sp_icon_yajirusi.png);
+            @include background-size(9px auto);
+          }
+        }
+        ul.sub{
+          display: none;
+        }
+      }
+    }
+  }
+  .utility{
+    padding: 12px 20px;
+    ul{
+      @include pie-clearfix;
+      li{
+
+        &:first-child{
+          float:left;
+        }
+        &:last-child{
+          float:right;
+        }
+      }
+    }
   }
 }

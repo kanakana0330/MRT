@@ -1,0 +1,19 @@
+.subnav{
+  li{
+    a{
+      color:$status_normalColor;
+      padding: 5px;
+      line-height: $textMinLineHeight;
+      font-size:#{$pc_textMediumSize}px;
+    }
+    &.cur{
+      background-color:$status_auxiliaryColor;
+      a{
+        color:$status_normalColor;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

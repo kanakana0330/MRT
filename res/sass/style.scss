@@ -9,6 +9,7 @@
   Orverride for PC
 */
 @media screen and (min-width: #{$sp_container_maxWidth}px) {
+  @import "_partial/mixins/reset/pc_override/all";
   @import "_partial/scaffolding_pc/all";
   @import "_partial/components_pc/all";
 }

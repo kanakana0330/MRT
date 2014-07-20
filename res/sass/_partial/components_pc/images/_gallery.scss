@@ -1,0 +1,19 @@
+.gallery{
+  .main{
+    img{
+      display: block;
+      width:180px;
+    }
+  }
+  .imgList{
+    margin-top: 6px;
+    @include pie-clearfix;
+    li{
+      float:left;
+      margin-left:6px;
+      &:first-child{
+        margin-left:0;
+      }
+    }
+  }
+}

@@ -27,23 +27,24 @@ $responsiveMinWidth: 580;
 $spacing: 5;
 $spacingLength: 5;
 
+$sp_contents_side_spacing:20;
 $sp_contents_vertical_spacing:20;
 
-$pc_contents_side_spacing:20;
-$pc_contents_vertical_spacing:20;
+$pc_contents_side_spacing:40;
+$pc_contents_vertical_spacing:45;
 
 /*
 * Layout
 */
-$sp_container_maxWidth: 960;
+$sp_container_maxWidth: 850;
+$sp_container_fixWidth: 480;
 $sp_container_minWidth: 320;
-$sp_logo_height: 50;
+$sp_logo_height: 75;
 
-$pc_container_maxWidth: 1024;
-$pc_navigation_width:150;
-
-$pc_contents_width: $pc_container_maxWidth - $pc_navigation_width - $pc_contents_side_spacing * 2;
-
+$pc_container_maxWidth: 1280;
+$pc_container_minWidth: 960;
+$pc_navigation_width:200;
+$pc_navigation_height:200;
 
 
 /*
@@ -57,24 +58,37 @@ $textMediumSize: $textDefaultSize;
 $textSmallSize: ($textDefaultSize - 2);
 $textTinySize:  ($textDefaultSize - 4);
 
-$textMinLineHeight: 1;
-$textLineHeight: 1.2;
-$textLineHeightM: 1.4;
-$textLineHeightL: 1.6;
+$pc_textDefaultSize: 14;
+$pc_textHugeSize:  ($pc_textDefaultSize + 6);
+$pc_textJumboSize: ($pc_textDefaultSize + 4);
+$pc_textLargeSize: ($pc_textDefaultSize + 2);
+$pc_textMediumSize: $pc_textDefaultSize;
+$pc_textSmallSize: ($pc_textDefaultSize - 2);
+$pc_textTinySize:  ($pc_textDefaultSize - 4);
+
+$textMinLineHeight: 1.2;
+$textLineHeight: 1.4;
+$textLineHeightM: 1.6;
+$textLineHeightL: 1.8;
 
 /*
 * color
 */
-$status_normalColor                  :'#345';
+$status_normalColor:#444;
+$status_linkColor:#AD1D22;
+$status_attentionColor:#AD1D22;
+$status_auxiliaryColor:#FFCACF;
 
 /*
 * components
 */
 
 //column
-$pc_column_spacing:20;
+$pc_column_spacing:40;
 
-$sp_image_unit_spacing:5;
+$sp_image_unit_spacing:10;
 $sp_image_unit_spacingBottom:20;
-$pc_image_unit_spacing:15;
-$pc_image_unit_spacingBottom:20;
+$pc_image_unit_spacing:40;
+$pc_image_unit_spacingBottom:40;
+
+$pc_subnav_spacing:40px;

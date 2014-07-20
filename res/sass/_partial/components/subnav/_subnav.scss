@@ -1,0 +1,27 @@
+.subnav{
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+  li{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    a{
+      display: block;
+      line-height: $textMinLineHeight;
+      font-size:#{$textMediumSize}px;
+      color:$status_linkColor;
+      padding:5px;
+    }
+    &.cur{
+      background-color:$status_auxiliaryColor;
+      a{
+        color:$status_normalColor;
+        &:hover{
+          text-decoration: none;
+        } 
+      }
+    }
+  }
+}

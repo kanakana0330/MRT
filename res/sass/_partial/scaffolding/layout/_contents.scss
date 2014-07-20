@@ -1,4 +1,7 @@
 .contents{
+  background-color: #fff;
   padding-top: #{$sp_logo_height}px;
-  background-color:#f1f2f3;
+  .mainCont{
+    padding:#{$sp_contents_vertical_spacing}px #{$sp_contents_side_spacing}px;
+  }
 }

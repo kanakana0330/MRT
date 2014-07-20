@@ -1,6 +1,31 @@
+%bgStyle{
+  background-repeat:no-repeat;
+  background-position:center top;
+  @include background-size(100% auto);
+}
+body{
+  background-color:#fff;
+  &.bg1{
+    @extend %bgStyle;
+    background-image:url(../images/common/bg1.jpg);
+  }
+  &.bg2{
+    @extend %bgStyle;
+    background-image:url(../images/common/bg2.jpg);
+  }
+  &.bg3{
+    @extend %bgStyle;
+    background-image:url(../images/common/bg3.jpg);
+  }
+  &.bg4{
+    @extend %bgStyle;
+    background-image:url(../images/common/bg4.jpg);
+  } 
+}
+
+
 .container {
-  position:relative;
   max-width: #{$pc_container_maxWidth}px;
-  padding-left: #{$pc_navigation_width + $pc_contents_side_spacing}px;
-  padding-right: #{$pc_contents_side_spacing}px;
+  min-height: 950px;
+  padding: 85px 50px 0 270px;
 }

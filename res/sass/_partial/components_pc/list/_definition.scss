@@ -1,0 +1,16 @@
+.shopDataList{
+  margin-bottom:25px;
+  @include pie-clearfix;
+  dt{
+    float: left;
+    width:90px;
+    font-weight: nomal;
+    margin-bottom:0;
+    margin-bottom:15px;
+  }
+  dd{
+    padding-left: 90px;
+    margin-bottom:0;
+    margin-bottom:15px;
+  }
+}

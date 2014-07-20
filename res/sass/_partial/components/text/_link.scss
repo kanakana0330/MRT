@@ -1,0 +1,32 @@
+a.tel{
+  font-size:#{$textHugeSize}px;
+  color:$status_linkColor;
+}
+
+%beforeIcon{
+  display: block;
+  margin-bottom:10px;
+  &:before{
+    content:'';
+    display: inline-block;
+    width: 10px;
+    height:10px;
+    background-repeat:no-repeat;
+    background-position:0 0;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+a.nomalLink{
+  @extend %beforeIcon;
+  &:before{
+    background-image:url(../images/common/icon_bullet.png);
+  }
+}
+
+a.externalLink{
+  @extend %beforeIcon;
+  &:before{
+    background-image:url(../images/common/icon_blank.png);
+  }
+}

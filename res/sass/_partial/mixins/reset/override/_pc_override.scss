@@ -1,0 +1,16 @@
+@media screen and (min-width: #{$sp_container_maxWidth}px) {
+
+  html, body, div, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  abbr, acronym, address, big, cite, code,
+  small, strike, strong, sub, sup, tt, var,
+  dl, dt, dd,
+  th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    // font-size:#{$pc_textDefaultSize}px;
+  }
+  
+}

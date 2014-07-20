@@ -1,12 +1,82 @@
 .glNav{
-  position: fixed;
-  top:0;
-  left:0;
+  position: absolute;
+  top:20px;
+  left:50px;
+  padding-bottom:30px;
   width: #{$pc_navigation_width}px;
-  background:#fdd;
+  background:rgba(255,255,255,0.8);
   .logo{
     position:relative;
-    height: auto;
-    background:#fdd;
+    height: #{$pc_navigation_height}px;
+    background-color:none;
+    background-image:url(../images/common/pc_logo.png);
+    background-position:0 0;
+    background-repeat: no-repeat;
+    @include background-size(200px);
+    a{
+      height: #{$pc_navigation_height}px;
+    }
   }
+  .mainNav{
+    padding:30px 8px 220px 28px;
+    > ul{
+      > li{
+        margin-bottom:20px;
+        > a{
+          font-size:#{$pc_textLargeSize}px;
+          font-weight: bold;
+        }
+        &.cur{
+          > a{
+            text-decoration:none;
+            color:$status_linkColor;
+          }
+        }
+        ul.sub{
+          padding:5px 0 0 10px;
+          > li{
+            margin-bottom: 3px;
+            >a{
+              display: block;
+              line-height: 22px;
+              padding:0 3px;
+            }
+            &.cur{
+              background-color:$status_auxiliaryColor;
+              a:hover{
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .utility{
+    padding:0 28px;
+    ul{
+      li{
+        display:inline-block;
+        a{
+          font-size:#{$pc_textTinySize}px;
+          &.mail{
+            &:before{
+              width:10px;
+              height: 8px;
+              margin-right:3px;
+              background-image:url(../images/common/icon_mail.png);
+              background-position:0 0;
+              background-repeat:no-repeat;
+              @include background-size(10px auto);
+            }
+          }
+        }
+        &:first-child{
+          margin-right:25px;
+        }
+      }
+    }
+  }
+
 }

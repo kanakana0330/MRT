@@ -1,6 +1,11 @@
 .container {
-  max-width: #{$sp_container_maxWidth}px;
+  position:relative;
+  max-width: #{$sp_container_fixWidth}px;
   min-width: #{$sp_container_minWidth}px;
   margin-left: auto;
   margin-right: auto;
+}
+
+body{
+  background-color:#fff;
 }

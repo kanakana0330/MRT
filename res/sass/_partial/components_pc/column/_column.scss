@@ -9,7 +9,6 @@
     .item{
       width: 50%;
       .itemIn{
-        background-color: #fff;
       }
 
       &:first-child{
@@ -23,13 +22,15 @@
         }
       }
     }
+
   }
+
+
   //3カラム
   &.col3{
     .item{
       width: 33.3%;
       .itemIn{
-        background-color: #fff;
         margin-left: #{$pc_column_spacing / 2}px;
         margin-right: #{$pc_column_spacing / 2}px;
       }
