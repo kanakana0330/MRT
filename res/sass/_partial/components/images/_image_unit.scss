@@ -1,23 +1,38 @@
 .imgUnit{
   margin-bottom:#{$sp_image_unit_spacingBottom}px;
-  img{
+  > img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom:#{$sp_image_unit_spacing}px;
   }
-  .txt{
+  > .txt{
   }
 }
 
 .imgUnitFixed{
   margin-bottom:#{$sp_image_unit_spacingBottom}px;
-  .item{
+  > .item{
     margin-bottom:#{$sp_image_unit_spacing}px;
   }
-  .itemImg{
+  > .itemImg{
     width:180px;
     margin-left:auto;
     margin-right:auto;
+  }
+}
+
+
+.imgUnitBorder{
+  border:1px solid $border_color;
+  @include pie-clearfix;
+  > .item{
+    padding:9px 4px;
+    float:left;
+  }
+  > .itemImg{
+    float:right;
+    width: 100px;
+    padding:4px;
   }
 }

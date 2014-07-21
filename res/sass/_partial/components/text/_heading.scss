@@ -12,3 +12,40 @@
   line-height:$textLineHeight;
   margin-bottom:10px;
 }
+.head3{
+  font-size:20px;
+  font-weight: normal;
+  line-height:$textLineHeight;
+  margin-bottom:10px;
+  &:before{
+    content:'';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: $status_normalColor;
+    @include border-radius(9px);
+    margin-right: 3px;
+  }
+  span{
+    display: block;
+    text-align:right;
+  }
+}
+
+.head4{
+  font-weight:normal;
+  font-size:#{$textLargeSize}px;
+  margin:25px 0 20px;
+}
+
+.head5{
+  margin-bottom: 10px;
+  &:before{
+    content:'';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: $status_normalColor;
+    margin-right: 3px;
+  }
+}

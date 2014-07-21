@@ -11,7 +11,7 @@ $textSizeAdjust: 'none';
 $tapHighlight: rgba(0,0,0,0);
 
 /* Font */
-$fontFamily: Helvetica, メイリオ, Meiryo, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", sans-serif;
+$fontFamily: YuGothic, 'Yu Gothic', "游ゴシック体", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "MS PGothic", Arial, Helvetica, Verdana, sans-serif;
 
 /* Body */
 $bodyBackgroundColor: '#fff';
@@ -78,6 +78,8 @@ $status_normalColor:#444;
 $status_linkColor:#AD1D22;
 $status_attentionColor:#AD1D22;
 $status_auxiliaryColor:#FFCACF;
+
+$border_color: #999;
 
 /*
 * components

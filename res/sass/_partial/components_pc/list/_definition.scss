@@ -22,16 +22,45 @@
     display: block;
     height: 50px;
     width: 90px;
-    font-size: $textMediumSize;
+    font-size: #{$pc_textMediumSize}px;
     line-height: 50px;
     font-weight:bold;
   }
   dd{
     display: block;
     margin-left: 90px;
-    border-bottom:1px solid #999;
-    font-size: $textMediumSize;
+    border-bottom:1px solid $border_color;
+    font-size: #{$pc_textMediumSize}px;
     line-height: 50px;
     height: 50px;
+  }
+}
+
+.drinkDataList{
+  dt{
+    text-align: left;
+  }
+}
+
+.soupDataList2{
+  @include pie-clearfix;
+  dt{
+    float:left;
+    width: 200px;
+    span{
+      font-size:#{$pc_textTinySize}px;
+    }
+  }
+  dd{
+    padding-left:200px;
+  }
+}
+
+.menuDataList{
+  dt{
+    margin-bottom:10px;
+  }
+  dd{
+    margin-bottom:20px;
   }
 }

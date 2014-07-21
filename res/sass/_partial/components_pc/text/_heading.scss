@@ -4,3 +4,19 @@
 .head2{
   font-size:20px;
 }
+.head3{
+  margin-bottom:15px;
+  @include pie-clearfix;
+  span{
+    display: inline-block;
+    float:right;
+  }
+}
+.head4{
+  font-size:#{$pc_textLargeSize}px;
+  margin:35px 0 20px;
+}
+
+.head5{
+  margin-bottom: 20px;
+}

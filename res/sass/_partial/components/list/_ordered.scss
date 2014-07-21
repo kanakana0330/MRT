@@ -1,0 +1,14 @@
+.numList{
+  li{
+    text-indent:-40px;
+    padding-left:40px;
+    margin-bottom:10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    img{
+      vertical-align: middle;
+      margin-right:20px;
+    }
+  }
+}

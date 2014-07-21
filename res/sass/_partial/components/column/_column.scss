@@ -1,5 +1,10 @@
 .column{
   .item{
-    margin-bottom:#{$pc_contents_vertical_spacing}px;
+    margin-bottom:45px;
+  }
+  &.nrwSpaceV{
+    .item{
+      margin-bottom:15px; 
+    }
   }
 }

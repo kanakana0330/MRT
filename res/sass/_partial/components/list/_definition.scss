@@ -1,5 +1,8 @@
 .shopDataList,
-.companyDataList{
+.companyDataList,
+.drinkDataList,
+.soupDataList1,
+.soupDataList2{
   line-height: $textLineHeight;
   dt{
     font-weight: bold;
@@ -7,5 +10,51 @@
   }
   dd{
     margin-bottom:15px; 
+  }
+}
+
+.drinkDataList{
+  dt{
+    text-align: center;
+  }
+  dd{
+    line-height: $textLineHeightL;
+  }
+}
+
+.soupDataList1{
+  dt{
+    img{
+      vertical-align: middle;
+      margin-left:3px;
+    }
+  }
+  dd{
+    line-height: $textLineHeightL;
+  }
+}
+
+.soupDataList2{
+  dt{
+    margin-bottom:10px;
+    span{
+      font-weight: normal;
+      font-size:#{$textTinySize}px;
+      margin-left: 10px;
+    }
+  }
+  dd{
+    line-height: $textLineHeightL;
+  }
+}
+
+.menuDataList{
+  line-height: $textLineHeight;
+  dt{
+    margin-bottom:5px;
+  }
+  dd{
+    margin-bottom:10px;
+    text-align: right; 
   }
 }

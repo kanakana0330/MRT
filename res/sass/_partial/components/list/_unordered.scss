@@ -1,0 +1,9 @@
+.discList{
+  padding-left:1em;
+  li{
+    display: list-item;
+    list-style: disc;
+    font-size:#{$textMediumSize}px;
+    line-height:$textLineHeight;
+  }
+}

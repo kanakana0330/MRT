@@ -1,0 +1,31 @@
+.borderUnit{
+  margin-top:10px;
+  height:70px;
+  border:1px solid $border_color;
+  background-image:url(../images/menu/hinabe2.png);
+  background-position:right top;
+  background-repeat:no-repeat;
+  padding:6px 4px;
+  line-height:$textLineHeightL;
+  @include text-shadow(0 1px 0 #fff);
+}
+
+.asideUnit{
+  border:1px solid $border_color;
+  .asideTtl{
+    height: 40px;
+    text-align: center;
+    font-size:#{$pc_textHugeSize}px;
+    font-weight:bold;
+    line-height: 40px;
+    background-color:#d2cac4;
+    background-image:url(../images/menu/bg_title.png),url(../images/menu/bg_title.png);
+    background-repeat:no-repeat,no-repeat;
+    background-position:left top, right bottom;
+
+  }
+  .asideCont{
+    padding:20px;
+
+  }
+}

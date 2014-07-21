@@ -1,22 +1,28 @@
 .imgUnit{
-  margin-bottom:#{$pc_image_unit_spacingBottom}px;
+  // margin-bottom:#{$pc_image_unit_spacingBottom}px;
   @include pie-clearfix;
-  img{
+  > img{
     float:left;
     margin-right:#{$pc_image_unit_spacing}px;
     margin-bottom:0;
   }
-  .txt{
+  > .txt{
     &.rect{
       overflow: hidden;
     }
   }
 
   &.imgR{
-    img{
+    > img{
       float:right;
       margin-right:0;
       margin-left:#{$pc_image_unit_spacing}px;
+    }
+  }
+
+  &.nrwSpace{
+    > img{
+      margin-right:#{$pc_image_unit_spacing / 2}px; 
     }
   }
 }
@@ -26,14 +32,15 @@
   display: table;
   table-layout: fixed;
   border-collapse: collapse;
-  .item{
+  > .item{
     display: table-cell;
     vertical-align: top;
   }
-  .itemImg{
+  > .itemImg{
     display: table-cell;
     width:220px;
     vertical-align: top;
     padding-left:#{$pc_image_unit_spacing}px;
   }
 }
+
