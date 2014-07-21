@@ -1,9 +1,9 @@
 .borderUnit{
   margin-top:10px;
-  height:70px;
+  min-height:70px;
   border:1px solid $border_color;
   background-image:url(../images/menu/hinabe2.png);
-  background-position:right top;
+  background-position:right bottom;
   background-repeat:no-repeat;
   padding:6px 4px;
   line-height:$textLineHeightL;
