@@ -5,19 +5,19 @@
 }
 body{
   background-color:#fff;
-  &.bg1{
+  .bg1{
     @extend %bgStyle;
     background-image:url(../images/common/bg1.jpg);
   }
-  &.bg2{
+  .bg2{
     @extend %bgStyle;
     background-image:url(../images/common/bg2.jpg);
   }
-  &.bg3{
+  .bg3{
     @extend %bgStyle;
     background-image:url(../images/common/bg3.jpg);
   }
-  &.bg4{
+  .bg4{
     @extend %bgStyle;
     background-image:url(../images/common/bg4.jpg);
   } 
@@ -26,6 +26,6 @@ body{
 
 .container {
   max-width: #{$pc_container_maxWidth}px;
-  min-height: 950px;
-  padding: 85px 50px 0 270px;
+  min-height: 640px;
+  padding: 20px 50px 0 270px;
 }
