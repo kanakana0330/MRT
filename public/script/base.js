@@ -2,6 +2,8 @@ $(function(){
   var $_mainCont = $('.mainCont');
   var fadeSpeed = 1500;
   var intarval = 6000;
+  var w = $(window).width();
+  var breakPoint = 850;
 
   var init = function(){
     $_mainCont.children('.topImg').css({opacity:'0'});
@@ -14,10 +16,10 @@ $(function(){
     },intarval);
   }
 
-
-
-  init();
-  changeImages();
-
+  if(w > breakPoint){
+    init();
+    changeImages();
+  }
+  
 });
 
