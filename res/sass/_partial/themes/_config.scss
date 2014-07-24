@@ -46,6 +46,9 @@ $pc_container_minWidth: 960;
 $pc_container_minHeight: 640;
 $pc_navigation_width:200;
 $pc_navigation_height:200;
+$pc_container_paddingTop: 20;
+$pc_container_paddingLeft: 50;
+$pc_container_paddingRight: $pc_container_paddingLeft + $pc_navigation_width + 20;
 
 
 /*

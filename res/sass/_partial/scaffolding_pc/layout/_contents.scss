@@ -4,5 +4,6 @@
   .mainCont{
     background-color:rgba(255,255,255,0.9);
     padding: #{$pc_contents_vertical_spacing}px #{$pc_contents_side_spacing}px;
+    min-height: #{$pc_container_minHeight - $pc_container_paddingTop}px;
   }
 }
