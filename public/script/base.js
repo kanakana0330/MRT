@@ -5,7 +5,12 @@ $(function(){
   var intarval = 6000;
 
   var breakPoint = 850;
-  var flg = 0;
+  var designFlg = 0;
+  var w;
+
+  var timer =false;
+  var before = 0, after = 0;
+
 
   var changeImages = function(){
     $_mainCont.children('.topImg').css({opacity:'0'});
@@ -17,23 +22,45 @@ $(function(){
   }
 
   var judgeBreakPoint = function(){
-    var w = $(window).width();
+    w = $(window).width();
+    before = w;
 
     if(w > breakPoint){
       changeImages();
-      flg = 1;
+      designFlg = 1;
     } else {
-      if(flg == 1){
+      if(designFlg == 1){
         location.reload();
       }
       flg = 0;
     }
   }
 
+  //initialize, if orientationchange event.
   $(window).on('orientationchange', judgeBreakPoint);
 
-  judgeBreakPoint();
+  //initialize, if the browser pass over `breakpoint`.
+  $(window).resize(function() {
+    var x = 0;
 
+    if (timer !== false){
+      clearTimeout(timer);
+    }
+
+    timer = setTimeout(function(){
+      timer =true;
+      after = $(window).width();
+      x = (before - breakPoint) * (after - breakPoint);
+      if(x < 0){
+        judgeBreakPoint();
+      }
+      before = after;
+    },100);
+
+  });
+
+  //initialize, onload.
+  judgeBreakPoint();
   
 });
 
