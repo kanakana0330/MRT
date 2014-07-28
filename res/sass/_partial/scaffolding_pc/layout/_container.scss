@@ -29,6 +29,7 @@ body{
   min-height: #{$pc_container_minHeight}px;
   padding: #{$pc_container_paddingTop}px #{$pc_container_paddingLeft}px 0 #{$pc_container_paddingRight}px;
   .copy{
+    margin-top:-50px;
     padding: 20px;
     font-size:#{$pc_textTinySize}px;
     &.top{

@@ -1,4 +1,9 @@
 $(function(){
+  var d = new Date();
+  $('.year').html(d.getFullYear());
+});
+
+var topPageGallary = function(){
   var $_mainCont = $('.mainCont');
 
   var fadeSpeed = 1500;
@@ -61,6 +66,6 @@ $(function(){
 
   //initialize, onload.
   judgeBreakPoint();
-  
-});
+}
+
 
