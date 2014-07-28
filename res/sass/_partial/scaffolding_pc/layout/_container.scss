@@ -33,7 +33,9 @@ body{
     padding: 20px;
     font-size:#{$pc_textTinySize}px;
     &.top{
+      position:relative;
       text-align: right;
+      z-index:10;
     }
   }
 }
