@@ -7,9 +7,9 @@
       font-size:#{$pc_textMediumSize}px;
     }
     &.cur{
-      background-color:$status_auxiliaryColor;
+      background-color:$status_auxiliaryBgColor;
       a{
-        color:$status_normalColor;
+        color:$status_auxiliaryTxtColor !important;
         &:hover{
           text-decoration: none;
         }
