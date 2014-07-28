@@ -28,4 +28,11 @@ body{
   max-width: #{$pc_container_maxWidth}px;
   min-height: #{$pc_container_minHeight}px;
   padding: #{$pc_container_paddingTop}px #{$pc_container_paddingLeft}px 0 #{$pc_container_paddingRight}px;
+  .copy{
+    padding: 20px;
+    font-size:#{$pc_textTinySize}px;
+    &.top{
+      text-align: right;
+    }
+  }
 }

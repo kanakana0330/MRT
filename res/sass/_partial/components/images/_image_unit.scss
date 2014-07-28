@@ -16,9 +16,9 @@
     margin-bottom:#{$sp_image_unit_spacing}px;
   }
   > .itemImg{
-    width:180px;
-    margin-left:auto;
-    margin-right:auto;
+    img{
+      width: 100%;
+    }
   }
 }
 
