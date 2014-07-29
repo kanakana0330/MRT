@@ -1,7 +1,27 @@
 $(function(){
   var d = new Date();
   $('.year').html(d.getFullYear());
+
+  var $_glNav = $('.glNav');
+  var navTop;
+  $(window).scroll(function(){
+    navTop = $(isHtmlScroll ? 'html' : 'body').scrollTop() + 20;
+    $_glNav.css({
+      'top': navTop
+    })
+  });
 });
+
+var isHtmlScroll = (function(){
+    var html = $('html'), top = html.scrollTop();
+    var el = $('<div/>').height(10000).prependTo('body');
+    html.scrollTop(10000);
+    var rs = !!html.scrollTop();
+    html.scrollTop(top);
+    el.remove();
+    return rs;
+})();
+
 
 var topPageGallary = function(){
   var $_mainCont = $('.mainCont');
