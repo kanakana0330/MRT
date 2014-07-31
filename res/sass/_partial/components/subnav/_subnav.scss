@@ -15,13 +15,11 @@
       height:100%;
       line-height: $textMinLineHeight;
       font-size:#{$textMediumSize}px;
-      color:$status_linkColor;
       padding:5px;
     }
     &.cur{
       background-color:$status_auxiliaryBgColor;
       a{
-        color:$status_auxiliaryTxtColor !important;
         &:hover{
           text-decoration: none;
         } 

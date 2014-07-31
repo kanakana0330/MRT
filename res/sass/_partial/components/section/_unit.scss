@@ -2,9 +2,12 @@
   margin-top:10px;
   min-height:70px;
   border:1px solid $border_color;
-  padding:6px 4px;
+  padding:10px;
   line-height:$textLineHeightL;
   @include text-shadow(0 1px 0 #fff);
+  p{
+    padding-bottom:10px;
+  }
   ul{
   width: 100%;
   display: table;
@@ -12,6 +15,17 @@
   border-collapse: collapse;
     li{
       display: table-cell;
+      padding-left:3px;
+      padding-right:3px;
+      &:first-child{
+        padding-left:0;
+      }
+      &:last-child{
+        padding-right:0;
+      }
+      img{
+        width: 100%;
+      }
     }
   }
 }
@@ -39,5 +53,62 @@
 .mapUnit{
   iframe{
     width: 100%;
+  }
+}
+
+.menuUnit{
+  position:relative;
+  background-position:0 0;
+  background-repeat:repeat;
+  background-image:url(../images/menu/menu_bg_1.png);
+  background-color:#eac7b7;
+  padding:25px 15px;
+  &:before,
+  &:after{
+    position:absolute;
+    content:"";
+    display: block;
+    width: 207px;
+    height:93px;
+    top:0;
+    background-repeat:no-repeat;
+    background-image:url(../images/menu/menu_bg_2.png);
+  }
+  &:before{
+    display: none;
+  }
+  &:after{
+    right:0;
+    background-position:0 -93px;
+  }
+  .menuIn{
+    background-color:#d3cac4;
+    padding:13px;
+  }
+  .menuHead{
+    position:relative;
+    z-index: 1;
+    font-size:22px;
+    line-height: $textLineHeight;
+    text-align: center;
+    margin-bottom:20px;
+  }
+  .selectStep{
+    margin-top: -10px;
+    > li{
+      background-color:#FFF3C2;
+      border:4px solid #CF9076;
+      @include border-radius(10px);
+      margin-top:10px;
+      padding:10px;
+    }
+  }
+  .selectHead{
+    font-size:18px;
+    font-weight: bold;
+    img{
+      vertical-align: middle;
+      margin-right: 15px;
+    }
   }
 }

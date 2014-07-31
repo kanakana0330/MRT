@@ -1,4 +1,49 @@
 .borderUnit{
   margin-top:20px;
-  padding:10px 4px;
+  p{
+    padding-bottom:20px;
+  }
+  img{
+    min-width: 90px;
+  }
+}
+@media screen and (max-width: 1036px) {
+  .borderUnit{
+    ul{
+      margin-top:-20px;
+      li{
+        display: block;
+        margin-top:10px;
+        img{
+          display: block;
+          width:137px;
+        }
+      }
+    }
+  }
+}
+
+.menuUnit{
+  &:before,
+  &:after{
+    width: 207px;
+    height:93px;
+    @include background-size(207px auto);
+  }
+  &:before{
+    display: block;
+    left:0;
+    background-position:0 0;
+  }
+  &:after{
+    right:0;
+    background-position:0 -93px;
+  }
+  .menuHead{
+    position:relative;
+    z-index: 1;
+    font-size:24px;
+    line-height: $textLineHeight;
+    text-align: center;
+  }
 }

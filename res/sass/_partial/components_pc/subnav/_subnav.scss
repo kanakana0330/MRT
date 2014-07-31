@@ -9,7 +9,6 @@
     &.cur{
       background-color:$status_auxiliaryBgColor;
       a{
-        color:$status_auxiliaryTxtColor !important;
         &:hover{
           text-decoration: none;
         }
