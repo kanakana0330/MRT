@@ -19,6 +19,7 @@
     }
     &.cur{
       background-color:$status_auxiliaryBgColor;
+      font-weight: bold;
       a{
         &:hover{
           text-decoration: none;

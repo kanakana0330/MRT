@@ -2,13 +2,24 @@ $(function(){
   var d = new Date();
   $('.year').html(d.getFullYear());
 
-  var $_glNav = $('.glNav');
-  var navTop;
+  var $_glNav = $('.glNav'),
+      $_bgCover = $('.bgCover');
+
+  var h, scrollMax;
+
+  console.log($_glNav.height());
+
+  if($_glNav.height() + 100 < $(window).height()){
+  }
   $(window).scroll(function(){
-    navTop = $(isHtmlScroll ? 'html' : 'body').scrollTop() + 20;
+
+    h = $(isHtmlScroll ? 'html' : 'body').scrollTop();
     $_glNav.css({
-      'top': navTop
+      'top': h + 20 + 'px'
     })
+    $_bgCover.css({
+      'top':h
+    });
   });
 });
 

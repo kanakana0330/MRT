@@ -1,28 +1,6 @@
-%bgStyle{
-  background-repeat:no-repeat;
-  background-position:center top;
-  @include background-size(100% auto);
-}
 body{
   background-color:#fff;
-  .bg1{
-    @extend %bgStyle;
-    background-image:url(../images/common/bg1.jpg);
-  }
-  .bg2{
-    @extend %bgStyle;
-    background-image:url(../images/common/bg2.jpg);
-  }
-  .bg3{
-    @extend %bgStyle;
-    background-image:url(../images/common/bg3.jpg);
-  }
-  .bg4{
-    @extend %bgStyle;
-    background-image:url(../images/common/bg4.jpg);
-  } 
-}
-
+} 
 
 .container {
   max-width: #{$pc_container_maxWidth}px;
@@ -38,4 +16,29 @@ body{
       z-index:10;
     }
   }
+  .bgCover{
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    img{
+      width:100%;
+    }
+  }
+}
+
+//topページだけで使用
+%bgStyle{
+  background-repeat:no-repeat;
+  background-position:center top;
+  @include background-size(100% auto);
+}
+.bg1{
+  @extend %bgStyle;
+  background-image:url(../images/common/bg1.jpg);
+}
+.bg2{
+  @extend %bgStyle;
+  background-image:url(../images/common/bg2.jpg);
 }
