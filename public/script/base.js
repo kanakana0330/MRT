@@ -5,20 +5,21 @@ $(function(){
   var $_glNav = $('.glNav'),
       $_bgCover = $('.bgCover');
 
-  var h, scrollMax;
+  var scrollMax = $(document).height();
 
-  // console.log($_glNav.height());
-
-  // if($_glNav.height() + 100 < $(window).height()){
-  // }
   $(window).scroll(function(){
+    var target = isHtmlScroll ? 'html' : 'body';
+    var scrollTop = $(target).scrollTop();
+    var height = $(window).height();
 
-    h = $(isHtmlScroll ? 'html' : 'body').scrollTop();
+    if ((scrollTop + height) > scrollMax) {
+      return;
+    }
     $_glNav.css({
-      'top': h + 20 + 'px'
-    })
+      'top': scrollTop + 20 + 'px'
+    });
     $_bgCover.css({
-      'top':h
+      'top': scrollTop
     });
   });
 });

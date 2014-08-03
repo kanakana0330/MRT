@@ -119,11 +119,9 @@
 
   //値段のところ
   .charge{
-    @include pie-clearfix;
     margin-bottom: 10px;
     .chargeDtl{
-      float: left;
-      padding-right:5px;
+      
       p{
         color:#AC1D22;
         font-size:14px;
@@ -138,7 +136,7 @@
       }
     }
     .chargeImg{
-      float: left;
+      display: none;
     }
   }
 
@@ -182,7 +180,6 @@
       font-size:16px;
       line-height: 1;
       font-weight:bold;
-      white-space: nowrap;
     }
     .num{
       float: left;
@@ -193,12 +190,13 @@
       text-align: center;
     }
     .txt{
+      float: left;
       padding-top: 2px;
       display: block;
     }
     .dsc{
-      margin-left:35px;
-      margin-top: -12px;
+      font-weight:normal;
+      color:$status_normalColor;
     }
   }
 }
@@ -208,7 +206,8 @@
   .selectStep{
     li{
       display: block !important;
-      padding:0 !important;
+      padding-left:0 !important;
+      padding-right:0 !important;
     }
   }
 }

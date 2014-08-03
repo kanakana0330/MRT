@@ -66,8 +66,17 @@
     }
   }
   .charge{
+    @include pie-clearfix;
     p{
       font-size:12px;
+    }
+    .chargeDtl{
+      float: left;
+      padding-right:5px;
+    }
+    .chargeImg{
+      display: block;
+      float: left;
     }
   }
   .topping{
