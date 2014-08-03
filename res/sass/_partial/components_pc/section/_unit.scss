@@ -46,4 +46,41 @@
     line-height: $textLineHeight;
     text-align: center;
   }
+  .selectHead{
+    font-size:18px;
+  }
+
+  .selectStep{
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: -10px;
+    > li{
+      display: table-cell;
+      padding-left:6px;
+      &:first-child{
+        padding-left:0;
+        padding-right:6px;
+      }
+    }
+  }
+  .charge{
+    p{
+      font-size:12px;
+    }
+  }
+  .topping{
+    dt{
+      font-size:16px;
+    }
+  }
+  .soupLead{
+    font-size: 18px;
+  }
+  .soupLevel{
+    .level{
+      font-size:14px;
+    }
+  }
 }

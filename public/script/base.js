@@ -7,10 +7,10 @@ $(function(){
 
   var h, scrollMax;
 
-  console.log($_glNav.height());
+  // console.log($_glNav.height());
 
-  if($_glNav.height() + 100 < $(window).height()){
-  }
+  // if($_glNav.height() + 100 < $(window).height()){
+  // }
   $(window).scroll(function(){
 
     h = $(isHtmlScroll ? 'html' : 'body').scrollTop();
