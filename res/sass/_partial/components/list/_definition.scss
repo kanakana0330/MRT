@@ -42,6 +42,10 @@
       font-size:#{$textTinySize}px;
       margin-left: 10px;
     }
+    img{
+      vertical-align: middle;
+      margin-left:3px;
+    }
   }
   dd{
     line-height: $textLineHeightL;
