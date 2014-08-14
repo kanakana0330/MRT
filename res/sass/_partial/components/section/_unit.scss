@@ -166,13 +166,11 @@
     margin-bottom:15px;
   }
   .soupLevel{
+    margin-bottom: 10px;
     li{
-      border-top:1px solid #989898;
-      padding-top:5px;
+      border-bottom:1px solid #989898;
+      padding-bottom:5px;
       margin-bottom:5px;
-      &:first-child{
-        border-top:none;
-      }
     }
     .level{
       @include pie-clearfix;
