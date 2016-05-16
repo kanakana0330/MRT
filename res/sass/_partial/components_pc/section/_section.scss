@@ -1,4 +1,5 @@
 .section{
+  @include pie-clearfix;
   margin-bottom:50px;
   .sectionInner{
     padding:0 20px;

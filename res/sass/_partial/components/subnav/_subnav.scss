@@ -14,8 +14,9 @@
       display: block;
       height:100%;
       line-height: $textMinLineHeight;
-      font-size:#{$textMediumSize}px;
-      padding:5px;
+      font-size:#{$textSmallSize}px;
+      padding:7px 0;
+      white-space: nowrap;
     }
     &.cur{
       background-color:$status_auxiliaryBgColor;
@@ -26,5 +27,8 @@
         } 
       }
     }
+  }
+  + .subnav{
+    border-top-width: 0;
   }
 }

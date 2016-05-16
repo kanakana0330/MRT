@@ -1,4 +1,12 @@
 .subnav{
+  width: 50%;
+  float: left;
+  border-top-width:1px !important;
+
+  &.wFull{
+    width: 100%;
+  }
+  
   li{
     a{
       color:$status_normalColor;
