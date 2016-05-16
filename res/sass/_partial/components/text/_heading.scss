@@ -49,3 +49,11 @@
     margin-right: 3px;
   }
 }
+.head6{
+  margin-bottom: 10px;
+  &:before{
+    content:'※';
+    display: inline-block;
+    margin-right: 3px;
+  }
+}
